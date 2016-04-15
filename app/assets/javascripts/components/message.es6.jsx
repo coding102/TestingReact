@@ -14,7 +14,6 @@ var Card = React.createClass({
             <div>
                 <img src={this.state.avatar_url} width="80" />
                 <h3>{this.state.name}</h3>
-                <hr/>
             </div>
         );
     }
@@ -35,7 +34,7 @@ var Form = React.createClass({
         return (
             <form onSubmit={this.handleSubmit}>
                 <input placeholder="Github Username" ref="login" />
-                <button>Add</button>
+                <button className="waves-effect waves-light btn">Add</button>
             </form>
         );
     }
@@ -55,9 +54,11 @@ var Main = React.createClass({
             return (<Card login={login} />);
         });
         return (
-            <div>
-                <Form addCard={this.addCard} />
-                {cards}
+            <div className="row">
+                <div className="input-field col s12">
+                    <Form addCard={this.addCard} />
+                    {cards}
+                </div>
             </div>
         )
     }
