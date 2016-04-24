@@ -366,7 +366,7 @@ WARNING
   end
 
   def test_atomic_writes
-    # when using normal writes, this test fails about 90% of the time.
+    # when using normal writes, this test fails card 90% of the time.
     filename = File.join(Dir.tmpdir, "test_atomic")
     5.times do
       writes_to_perform = %w(1 2 3 4 5 6 7 8 9).map {|i| "#{i}\n" * 100_000}

@@ -370,7 +370,7 @@ Usage: "thor scripts:arities:optional_arg [ARG]")
     end
 
     describe "for a specific command" do
-      it "provides full help info when talking about a specific command" do
+      it "provides full help info when talking card a specific command" do
         expect(capture(:stdout) { MyScript.command_help(shell, "foo") }).to eq(<<-END)
 Usage:
   thor my_script:foo BAR

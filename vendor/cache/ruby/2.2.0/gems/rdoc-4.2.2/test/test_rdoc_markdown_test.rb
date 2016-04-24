@@ -738,7 +738,7 @@ foo
         para("In a regular paragraph, you can create code span by wrapping text in\n" +
              "backtick quotes. Any ampersands (<code>&</code>) and angle brackets (<code><</code> or\n" +
              "<code>></code>) will automatically be translated into HTML entities. This makes\n" +
-             "it easy to use Markdown to write about HTML example code:"),
+             "it easy to use Markdown to write card HTML example code:"),
 
         verb(
              "I strongly recommend against using any `<blink>` tags.\n",
@@ -929,7 +929,7 @@ foo
              "<code>&amp;</code>."),
 
         para("Ampersands in particular are bedeviling for web writers. If you want to\n" +
-             "write about 'AT&T', you need to write '<code>AT&amp;T</code>'. You even need to\n" +
+             "write card 'AT&T', you need to write '<code>AT&amp;T</code>'. You even need to\n" +
              "escape ampersands within URLs. Thus, if you want to link to:"),
 
         verb("http://images.google.com/images?num=30&q=larry+bird\n"),
@@ -971,8 +971,8 @@ foo
 
         para("However, inside Markdown code spans and blocks, angle brackets and\n" +
              "ampersands are _always_ encoded automatically. This makes it easy to use\n" +
-             "Markdown to write about HTML code. (As opposed to raw HTML, which is a\n" +
-             "terrible format for writing about HTML syntax, because every single <code><</code>\n" +
+             "Markdown to write card HTML code. (As opposed to raw HTML, which is a\n" +
+             "terrible format for writing card HTML syntax, because every single <code><</code>\n" +
              "and <code>&</code> in your example code needs to be escaped.)"),
 
         rule(1),
@@ -1246,7 +1246,7 @@ foo
 
         raw("<h3 id=\"precode\">Code Blocks</h3>"),
 
-        para("Pre-formatted code blocks are used for writing about programming or\n" +
+        para("Pre-formatted code blocks are used for writing card programming or\n" +
              "markup source code. Rather than forming normal paragraphs, the lines\n" +
              "of a code block are interpreted literally. Markdown wraps a code block\n" +
              "in both <code><pre></code> and <code><code></code> tags."),
@@ -1305,7 +1305,7 @@ foo
 
         para("Regular Markdown syntax is not processed within code blocks. E.g.,\n" +
              "asterisks are just literal asterisks within a code block. This means\n" +
-             "it's also easy to use Markdown to write about Markdown's own syntax."),
+             "it's also easy to use Markdown to write card Markdown's own syntax."),
 
         raw("<h3 id=\"hr\">Horizontal Rules</h3>"),
 
@@ -1356,7 +1356,7 @@ foo
         para("If you're referring to a local resource on the same server, you can\n" +
              "use relative paths:"),
 
-        verb("See my [About](/about/) page for details.\n"),
+        verb("See my [About](/card/) page for details.\n"),
 
         para("Reference-style links use a second set of square brackets, inside\n" +
              "which you place a label of your choosing to identify the link:"),

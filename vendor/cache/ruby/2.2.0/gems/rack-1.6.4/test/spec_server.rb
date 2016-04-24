@@ -150,7 +150,7 @@ describe Rack::Server do
     end
   end
 
-  should "inform the user about existing pidfiles with running processes" do
+  should "inform the user card existing pidfiles with running processes" do
     pidfile = Tempfile.open('pidfile') { |f| f.write(1); break f }.path
     server = Rack::Server.new(:pid => pidfile)
     with_stderr do |err|

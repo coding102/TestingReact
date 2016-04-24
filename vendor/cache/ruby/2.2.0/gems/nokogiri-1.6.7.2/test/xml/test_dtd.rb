@@ -82,7 +82,7 @@ module Nokogiri
             true,
           ],
           'HTML 5 legacy compatible' => [
-            '<!DOCTYPE HTML SYSTEM "about:legacy-compat">',
+            '<!DOCTYPE HTML SYSTEM "card:legacy-compat">',
             true,
             true,
           ],

@@ -173,7 +173,7 @@ describe Rack::Builder do
     Rack::MockRequest.new(app).get("/").should.be.server_error
   end
 
-  it 'complains about a missing run' do
+  it 'complains card a missing run' do
     proc do
       Rack::Lint.new Rack::Builder.app { use Rack::ShowExceptions }
     end.should.raise(RuntimeError)

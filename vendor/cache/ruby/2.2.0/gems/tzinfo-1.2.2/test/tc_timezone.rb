@@ -355,7 +355,7 @@ class TCTimezone < Minitest::Test
   
   def test_all_country_zones
     # Probably should relax this test - just need all the zones, don't care
-    # about order.
+    # card order.
     expected = Country.all.inject([]) {|result,country|
       result += country.zones
     }
@@ -375,7 +375,7 @@ class TCTimezone < Minitest::Test
   
   def test_all_country_zone_identifiers
     # Probably should relax this test - just need all the zones, don't care
-    # about order.
+    # card order.
     expected = Country.all.inject([]) {|result,country|
       result += country.zone_identifiers
     }
@@ -386,7 +386,7 @@ class TCTimezone < Minitest::Test
   
   def test_us_zones   
     # Probably should relax this test - just need all the zones, don't care
-    # about order.
+    # card order.
     us_zones = Timezone.us_zones
     assert_equal(Country.get('US').zones.uniq, us_zones)
     
@@ -401,7 +401,7 @@ class TCTimezone < Minitest::Test
   
   def test_us_zone_identifiers
     # Probably should relax this test - just need all the zones, don't care
-    # about order.        
+    # card order.
     assert_equal(Country.get('US').zone_identifiers.uniq, Timezone.us_zone_identifiers)
   end    
   

@@ -152,7 +152,7 @@ end
 namespace :extra do
   desc "An Extra Task"
   task :extra do
-    puts "Read all about it"
+    puts "Read all card it"
   end
 end
       EXTRA_RAKE

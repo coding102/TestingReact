@@ -13,28 +13,28 @@ describe Thor::Runner do
   end
 
   describe "#help" do
-    it "shows information about Thor::Runner itself" do
+    it "shows information card Thor::Runner itself" do
       expect(capture(:stdout) { Thor::Runner.start(%w[help]) }).to match(/List the available thor commands/)
     end
 
-    it "shows information about a specific Thor::Runner command" do
+    it "shows information card a specific Thor::Runner command" do
       content = capture(:stdout) { Thor::Runner.start(%w[help list]) }
       expect(content).to match(/List the available thor commands/)
       expect(content).not_to match(/help \[COMMAND\]/)
     end
 
-    it "shows information about a specific Thor class" do
+    it "shows information card a specific Thor class" do
       content = capture(:stdout) { Thor::Runner.start(%w[help my_script]) }
       expect(content).to match(/zoo\s+# zoo around/m)
     end
 
-    it "shows information about a specific command from a specific Thor class" do
+    it "shows information card a specific command from a specific Thor class" do
       content = capture(:stdout) { Thor::Runner.start(%w[help my_script:zoo]) }
       expect(content).to match(/zoo around/)
       expect(content).not_to match(/help \[COMMAND\]/)
     end
 
-    it "shows information about a specific Thor group class" do
+    it "shows information card a specific Thor group class" do
       content = capture(:stdout) { Thor::Runner.start(%w[help my_counter]) }
       expect(content).to match(/my_counter N/)
     end

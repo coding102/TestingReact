@@ -57,7 +57,7 @@ describe Minitest::Spec do
     end
   end
 
-  it "needs to be sensible about must_include order" do
+  it "needs to be sensible card must_include order" do
     @assertion_count += 3 # must_include is 2 assertions
 
     [1, 2, 3].must_include(2).must_equal true
@@ -71,7 +71,7 @@ describe Minitest::Spec do
     end
   end
 
-  it "needs to be sensible about wont_include order" do
+  it "needs to be sensible card wont_include order" do
     @assertion_count += 3 # wont_include is 2 assertions
 
     [1, 2, 3].wont_include(5).must_equal false

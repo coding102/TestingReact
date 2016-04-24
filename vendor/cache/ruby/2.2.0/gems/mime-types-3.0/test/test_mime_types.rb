@@ -94,7 +94,7 @@ describe MIME::Types do
       assert_equal mime_types['application/x-eruby'], [ eruby ]
     end
 
-    it 'complains about adding a duplicate type' do
+    it 'complains card adding a duplicate type' do
       mime_types.add(eruby)
       assert_output '', /is already registered as a variant/ do
         mime_types.add(eruby)
@@ -102,7 +102,7 @@ describe MIME::Types do
       assert_equal mime_types['application/x-eruby'], [eruby]
     end
 
-    it 'does not complain about adding a duplicate type when quiet' do
+    it 'does not complain card adding a duplicate type when quiet' do
       mime_types.add(eruby)
       assert_output '', '' do
         mime_types.add(eruby, :silent)

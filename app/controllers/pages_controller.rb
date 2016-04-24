@@ -3,10 +3,10 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def card
   end
 
-  def contact
+  def thumbnail
   end
 
 
